@@ -1,11 +1,22 @@
 body {
     background: #f7f7f7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 900px;
+    margin: auto;
 }
 .header__avatar {
     border: 1px solid #000;
     border-radius: 50%;
 }
 #header__title, .section__subtitle, .article__title {
+    color: #505050;
+}
+#header__title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: line-through;
     color: #505050;
 }
 article {
@@ -23,8 +34,17 @@ article {
 }
 .article__image {
     margin-bottom: 15px;
+    width: 100%;
 }
 .article__content {
     margin: 0;
     margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.footer__contacts {
+    list-style-type: none;
+    padding-left: 15px;
+}
+.footer__contacts li a {
+    text-decoration: none;
 }

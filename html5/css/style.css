@@ -1,0 +1,30 @@
+body {
+    background: #f7f7f7;
+}
+.header__avatar {
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+#header__title, .section__subtitle, .article__title {
+    color: #505050;
+}
+article {
+    background: #fff;
+    padding: 15px;
+    border: 3px solid #000;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.article__title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.article__image {
+    margin-bottom: 15px;
+}
+.article__content {
+    margin: 0;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+    <style>
+        .container {
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        .item {
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+        .stretch {
+            align-content: stretch;
+        }
+        .center {
+            align-content: center;
+        }
+        .flex-start {
+            align-content: flex-start;
+        }
+        .flex-end {
+            align-content: flex-end;
+        }
+        .space-around {
+            align-content: space-around;
+        }
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">1 Lorem, ipsum dolor elit. Vitae, fugiat?</div>
+        <div class="item">2 Voluptatibus odit e Nulla ab natus ea aboriosam, magnam eaque?</div>
+        <div class="item">3 Ratione nihil molestia eque distinctio ea ad molestiae quasi rem.</div>
+        <div class="item">4 Lorem ipsum dolor sit amet.</div>
+        <div class="item">5 Eest nisi dolor temporibus vero sint doloremque at placeat?</div>
+        <div class="item">6 Lorem non officiis vitae ad sednobis dicta?</div>
+        <div class="item">7 Ruia amet ad deserunt. Quo nam quis deleniti nesciunt sed.</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Dolores officia consequuntur nam quis sed deserunt.</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Repellendus, impedi maoptio ut quis adipisci sequi fuga a.</div>
+        <div class="item">Doloribus laudantium eius nam eum. Exercitationem eum qui veritatis.</div>
+        <div class="item">Rem nisi temporibus id soluta fuga!</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Dolores officia consequuntur nam quis sed deserunt.</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Repellendus, impedi maoptio ut quis adipisci sequi fuga a.</div>
+        <div class="item">Doloribus laudantium eius nam eum. Exercitationem eum qui veritatis.</div>
+        <div class="item">Rem nisi temporibus id soluta fuga!</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Dolores officia consequuntur nam quis sed deserunt.</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Repellendus, impedi maoptio ut quis adipisci sequi fuga a.</div>
+        <div class="item">Doloribus laudantium eius nam eum. Exercitationem eum qui veritatis.</div>
+        <div class="item">Rem nisi temporibus id soluta fuga!</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Dolores officia consequuntur nam quis sed deserunt.</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Repellendus, impedi maoptio ut quis adipisci sequi fuga a.</div>
+        <div class="item">Doloribus laudantium eius nam eum. Exercitationem eum qui veritatis.</div>
+        <div class="item">Rem nisi temporibus id soluta fuga!</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Dolores officia consequuntur nam quis sed deserunt.</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Repellendus, impedi maoptio ut quis adipisci sequi fuga a.</div>
+        <div class="item">Doloribus laudantium eius nam eum. Exercitationem eum qui veritatis.</div>
+        <div class="item">Rem nisi temporibus id soluta fuga!</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Dolores officia consequuntur nam quis sed deserunt.</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Adipisci laborum voluptas, eligendi iste dis laborum alias?</div>
+        <div class="item">Repellendus, impedi maoptio ut quis adipisci sequi fuga a.</div>
+        <div class="item">Doloribus laudantium eius nam eum. Exercitationem eum qui veritatis.</div>
+        <div class="item">Rem nisi temporibus id soluta fuga!</div>
+    </div>
+</body>
+</html>
